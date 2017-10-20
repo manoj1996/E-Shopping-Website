@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>signUp</title>
+<link rel="stylesheet" type="text/css" href="ShopCSS.css"/>
+<script type = "text/javascript">
+function dd()
+{
+	document.write('<select name = "dd">');
+
+	for(var i = 1; i < 32; i++)
+	{
+		var s="";
+		if(i < 10)
+		{
+			s+="0"+i;
+			document.writeln('<option name='+s+'>'+s+'</option>');
+		}
+		else
+		{
+			s += i;
+			document.writeln('<option name='+s+'>'+s+'</option>');
+		}
+	}
+	document.write("</select>");
+}
+function mm()
+{
+	document.write('<select name = "mm">');
+
+	for(var i = 1; i < 13; i++)
+	{
+		var s="";
+		if(i < 10)
+		{
+			s+="0"+i;
+			document.writeln('<option name='+s+'>'+s+'</option>');
+		}
+		else
+		{
+			s += i;
+			document.writeln('<option name='+s+'>'+s+'</option>');
+		}
+	}
+	document.write("</select>");
+}
+function yy()
+{
+	document.write('<select name = "yy">');
+	for(var i = 1950; i < 2015; i++)
+	{
+			var s = "";
+			s += i;
+			if(i == 1996)
+			{
+				document.writeln('<option name='+s+' selected = "yes">'+s+'</option>');
+			}
+			else{
+				document.writeln('<option name='+s+'>'+s+'</option>');
+			}
+		
+	}
+	document.write("</select>");
+}
+
+
+function sub()
+{
+<?php
+	setcookie($first,document.getElementById("Fname").value);
+?>
+
+}
+	
+</script>
+</head>
+<body class="signUp">
+<div class = "signUp">
+<h1 align = "center"> Sign Up </h1>
+<form method = "" action = "Shop@_Login.html">
+<label style = "font-size:72 px">First Name :<input type="text" id = "Fname" name = "first" placeholder = "First Name" required/></label><br/><br/>
+<label>Middle Name :<input type="text"  id = "Mname" name = "middle" placeholder = "Middle Name" required/></label><br/><br/>
+<label>Last Name :<input type = "text" id = "Lname" name = "last" placeholder = "Last Name" required/></label><br/><br/>
+<label>Username :<input type="text"  id = "username" name = "username" placeholder = "username" required/></label><br/><br/>
+<label>Gender : <input type = "radio" name = "gender" value = "male" />Male</label>
+<label><input type = "radio" name = "gender" value = "female"/>Female</label> <br/><br/>
+<label>Date of Birth : DD :<script>dd();</script> MM:<script>mm();</script> YYYY : <script>yy();</script></label>
+<br/><br/>
+<label>Email :<input type = "text" id = "email" name = "email" placeholder = "Email" required/></label><br/><br/>
+<label>Password : <input type="password" id = "pass" name="password" placeholder="password" required/></label><br/><br/>
+<label>Mobile :<input type = "text" name = "mobile" id = "mobile" placeholder = "Mobile" maxlength = "10" size = "8ex" required/></label><br/><br/>
+<div align="center"><input type = "submit" name = "submit" value = "Submit" onclick = "sub()"/></div>
+</form>
+</div>
+</body>
+</html>

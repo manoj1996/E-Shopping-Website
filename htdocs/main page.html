@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>main page</title>
+<style type="text/css">
+
+.heading{
+		text-align:center;
+		font-size:36pt;
+		
+		}
+		
+.pos{
+		position:absolute;
+		left:1700px;
+		top:10px;
+		font-size:20px;
+		background-color:yellow;
+		border-width:3px;
+		border-style:solid;
+		}
+
+.pos2{
+		position:absolute;
+		left:1780px;
+		top:10px;
+		font-size:20px;
+		background-color:yellow;
+		border-width:3px;
+		border-style:solid;
+		}
+
+.back{
+		background-image:url("back4.jpg");
+	
+	}
+
+.color{
+		text-decoration:none;
+		vertical-align:middle;
+		text-align:center;
+}
+</style>
+</head>
+<body class="back">
+
+<div class="heading"><img src="logo.jpeg" width="50" height="50"/>shop@shop</div>
+<hr style="height:5px;border-width:0;background-color:red">
+<a href="Sports.html">
+<img src="Sports.jpg" width="400" height="400"  onmouseover="bigImgS(this)" style="position:absolute;top:120;left:330" onmouseout="normalImgS(this)"/>
+</a>
+
+<a href="Home.html">
+<img src="Appliances.jpg" width="400" height="400"  onmouseover="bigImgH(this)" style="position:absolute;top:120;left:740;"onmouseout="normalImgH(this)"/>
+</a>
+
+<a href="Books.html">
+<img src="Books.jpg" width="400" height="400" onmouseover="bigImgB(this)" style="position:absolute;top:120;left:1150" onmouseout="normalImgB(this)"/>
+</a>
+
+<a href="Lifestyle.html">
+<img src="Lifestyle.jpg" width="400" height="400" style="position:absolute;top:543;left:330" onmouseover="bigImgL(this)"	onmouseout="normalImgL(this)"/>
+</a>
+
+<a href="Automotives.html">
+<img src="Automotives.jpg" width="400" height="400" style="position:absolute;top:543;left:740" onmouseover="bigImgA(this)"	onmouseout="normalImgA(this)"/>
+</a>
+
+<a href="Electronics.html">
+<img src="Electronics.jpg" width="400" height="400" style="position:absolute;top:543;left:1150" onmouseover="bigImgE(this)" onmouseout="normalImgE(this)"/>
+</a>
+<a href="Shop@_Login.php" class="color">
+<span class="pos" style="height:40px;width:60px;padding-top:10px;padding-left:5px;padding-right:5px">	
+Login
+</span>
+</a>
+
+<a href="signUp.html" class="color">
+<span class="pos2" style="height:40px;width:80px;padding-top:10px;padding-left:5px;padding-right:5px">
+Sign Up
+</span>
+</a>
+
+<script>
+function bigImgE(x)
+{
+		x.style.height = "520px";
+		x.style.width = "600px";
+		x.style.top = "443px";
+		x.style.left = "1050px";
+}
+
+function normalImgE(x) {
+		x.style.height = "400px";
+		x.style.width = "400px";
+		x.style.top = "543px";
+		x.style.left = "1150px";
+}
+function bigImgB(x)
+{
+		x.style.height = "520px";
+		x.style.width = "600px";
+		x.style.top = "100px";
+		x.style.left = "1050px";
+		x.style.zIndex = 1;
+}
+
+function normalImgB(x) {
+		x.style.height = "400px";
+		x.style.width = "400px";
+		x.style.top = "120px";
+		x.style.left = "1150px";
+		x.style.zIndex = 0;
+}
+function bigImgA(x)
+{
+		x.style.height = "520px";
+		x.style.width = "600px";
+		x.style.top = "443px";
+		x.style.left = "640px";
+		x.style.zIndex = 1;
+}
+
+function normalImgA(x) {
+		x.style.height = "400px";
+		x.style.width = "400px";
+		x.style.top = "543px";
+		x.style.left = "740px";
+		x.style.zIndex = 0;
+}
+function bigImgL(x)
+{
+		x.style.height = "520px";
+		x.style.width = "600px";
+		x.style.top = "443px";
+		x.style.left = "230px";
+		x.style.zIndex = 1;
+}
+
+function normalImgL(x) {
+		x.style.height = "400px";
+		x.style.width = "400px";
+		x.style.top = "543px";
+		x.style.left = "330px";
+		x.style.zIndex = 0;
+}
+function bigImgH(x)
+{
+		x.style.height = "520px";
+		x.style.width = "600px";
+		x.style.top = "100px";
+		x.style.left = "640px";
+		x.style.zIndex = 1;
+}
+
+function normalImgH(x) {
+		x.style.height = "400px";
+		x.style.width = "400px";
+		x.style.top = "120px";
+		x.style.left = "740px";
+		x.style.zIndex = 0;
+}
+function bigImgS(x)
+{
+		x.style.height = "520px";
+		x.style.width = "600px";
+		x.style.top = "100px";
+		x.style.left = "220px";
+		x.style.zIndex = 1;		
+}
+
+function normalImgS(x) {
+		x.style.height = "400px";
+		x.style.width = "400px";
+		x.style.top = "120px";
+		x.style.left = "330px";
+		x.style.zIndex = 0;		
+}
+</script>
+</body>
+</html>

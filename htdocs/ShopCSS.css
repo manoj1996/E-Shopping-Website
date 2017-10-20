@@ -1,0 +1,48 @@
+body.disp
+{
+	background-color : WhiteSmoke;
+	background-image : url("new.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	margin : 120px 25px 25px 25px;
+	text-align: center;
+	padding-left: 700px;
+	padding-right: 700px;
+	padding-top:50px;
+	font-family : candara;
+	font-size:16pt;
+}
+h1.login
+{
+	text-align : center;
+}
+div.disp
+{
+	display : block;
+}
+div.division
+{
+	border-style: solid;
+	border-radius: 25px;
+	border-width: 5px;
+	background-color: white;
+}
+body.signUp
+{
+	font-family: candara;
+	background-image : url("logo.jpeg");
+	background-size: 20% 33%;
+	padding-left:650;
+	padding-right:650;
+	padding-top:100px;
+	font-size:16pt
+}	
+div.signUp
+{
+	background-color:white;
+	border-width:5px;
+	border-style: solid;
+	border-radius: 25px;
+	padding-top:25px;
+	padding-left:50px;
+}

@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Shop@Shop_Login</title>
+<link rel="stylesheet" type = " text/css" href="ShopCSS.css"/>
+<script>
+localStorage.setItem("logged",false);
+function change()
+{
+
+	var a = (document.getElementById("username").value);
+	var b = (document.getElementById("pass").value);
+	var c = (localStorage.getItem("email"));
+	var d = (localStorage.getItem("pass"));
+	
+	var e = a.localeCompare(c);
+	var f = b.localeCompare(d);
+	if(a==e && b==f)
+	{
+		localStorage.getItem("logged")=true;
+		log();
+	}
+	else
+	{
+		alert("wrong username or password");
+	}
+	return logged;
+}
+
+function log()
+{
+	location.replace("main page.html");
+}
+</script>
+</head>
+<body class = "disp">
+<div class = "division">
+<h1 class = "login"> SHOP@SHOP</h1>
+<img src = "logo.jpeg" alt = "Shop@Shop_logo" width = "300px" height = "250px"/>
+<div class = "disp">
+<form onsubmit="return change">
+<br/>
+<label> Username:<input type = "text" id = "name" name = "username" placeholder = "Username/Email" ></label><br/><br/>
+<label> Password :<input type = "password" id = "pass" name = "Password" placeholder = "Password"></label><br/><br/>
+<input type = "submit" name = "Submit" value = "Submit" />
+</form>
+<a href="signUp.html"><h4>Sign Up</h4><a>
+</div>
+</div>
+</body>
+</html>
